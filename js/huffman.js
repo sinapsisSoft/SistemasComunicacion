@@ -16,10 +16,8 @@ function frequency(str) {
 
     return freqs;
 }
-var menssage="diego d ";
-//alert(menssage.replace(/\ /g,'$'));
-w = frequency(menssage);
-//console.log(sortfreq(w));
+
+
 
 function sortfreq(freqs) {
     var tuples = [];
@@ -61,8 +59,8 @@ function buildtree(tuples) {
     }
     return tuples;
 }
-var tree = buildtree(sortfreq(w));
-console.log(tree);
+
+
 code = {};
 pat = '';
 //assiging codes to each letter  
@@ -72,10 +70,8 @@ function assignCode(node, pat) {
        
     }
     else {
-        alert(node[0]);
         assignCode(node[0], pat + '0');
         assignCode(node[1], pat + '1');
     }
 }
-assignCode(tree,1);
-console.log(code);
+
